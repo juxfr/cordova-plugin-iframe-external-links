@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova.plugin.iframe-external-links"
-        version="1.0.5">
+        version="1.0.6">
 
     <name>iframeExternalLinks</name>
 
@@ -14,10 +14,9 @@
 
     <author>Julien Cornic</author>
 
-
-    <config-file target="config.xml" parent="/*">
-        <preference name="Fullscreen" value="true" />
-    </config-file>
+    <engines>
+		  <engine name="cordova" version=">=3.5.0" />
+	  </engines>  
     
     <js-module src="www/empty.js" name="empty">
       <clobbers target="empty" />
