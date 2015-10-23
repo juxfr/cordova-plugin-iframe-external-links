@@ -19,9 +19,10 @@
  under the License.
  */
 
-#import "MainViewController.h"
+#import "IframeExternalLinks.h"
+#import <Cordova/CDVWebViewDelegate.h>
 
-@implementation MainViewController
+@implementation CDVWebViewDelegate (IframeExternalLinks)
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
