@@ -23,6 +23,10 @@
     </config-file>
     
     <asset src="www/empty.js" target="empty.js" />
+    
+    <js-module src="www/empty.js" name="empty">
+      <clobbers target="empty" />
+    </js-module>
 
     <!-- ios -->
     <platform name="ios">

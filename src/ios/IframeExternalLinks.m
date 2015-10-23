@@ -25,7 +25,9 @@
 
 - (void) initPlugin:(CDVInvokedUrlCommand*)command
 {
-    
+    CDVPluginResult* pluginResult = nil;
+    NSString* echo = [command.arguments objectAtIndex:0];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 
