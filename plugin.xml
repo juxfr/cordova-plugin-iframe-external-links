@@ -21,18 +21,16 @@
     <config-file target="config.xml" parent="/*">
         <preference name="Fullscreen" value="true" />
     </config-file>
+    
+    <asset src="www/empty.js" target="empty.js" />
 
     <!-- ios -->
     <platform name="ios">
-
         <config-file target="config.xml" parent="/*">
-            <feature name="HiddenStatusbarOverlay">
+            <feature name="IframeExternalLinks">
                 <param name="ios-package" value="IframeExternalLinks" />
             </feature>
         </config-file>
-        
-        <asset src="www/empty.js" target="empty.js" />
-
         <header-file src="src/ios/IframeExternalLinks.h" />
         <source-file src="src/ios/IframeExternalLinks.m" />
     </platform>

@@ -19,9 +19,7 @@
  under the License.
  */
 
-#import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
-#import <CoreLocation/CoreLocation.h>
 
 @interface IframeExternalLinks : CDVPlugin
 
