@@ -22,7 +22,7 @@
 #import "IframeExternalLinks.h"
 #import "MainViewController.h"
 
-@implementation MainViewController
+@implementation IframeExternalLinks
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
