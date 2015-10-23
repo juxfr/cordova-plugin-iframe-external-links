@@ -19,10 +19,9 @@
  under the License.
  */
 
-#import "IframeExternalLinks.h"
 #import "MainViewController.h"
 
-@implementation IframeExternalLinks
+@implementation MainViewController
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
