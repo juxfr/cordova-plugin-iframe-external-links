@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-iframe-external-links"
+        version="1.0.1">
+
+    <name>iframeExternalLinks</name>
+
+    <description>Cordova plugin to open external links (located in iframe) in Safari on iOS</description>
+    <repo>https://github.com/juxfr/cordova-plugin-iframe-external-links</repo>
+    <keywords>iframe, shouldStartLoadWithRequest, external link</keywords>
+    <license>Apache 2.0</license>
+
+    <author>Julien Cornic</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <config-file target="config.xml" parent="/*">
+        <preference name="Fullscreen" value="true" />
+    </config-file>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="HiddenStatusbarOverlay">
+                <param name="ios-package" value="IframeExternalLinks" />
+            </feature>
+        </config-file>
+        
+        <asset src="www/empty.js" target="empty.js" />
+
+        <header-file src="src/ios/IframeExternalLinks.h" />
+        <source-file src="src/ios/IframeExternalLinks.m" />
+    </platform>
+</plugin>
