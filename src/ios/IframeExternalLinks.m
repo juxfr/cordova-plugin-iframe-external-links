@@ -20,16 +20,9 @@
  */
 
 #import "IframeExternalLinks.h"
+#import "MainViewController.h"
 
-@implementation IframeExternalLinks
-
-- (void) initPlugin:(CDVInvokedUrlCommand*)command
-{
-    CDVPluginResult* pluginResult = nil;
-    NSString* echo = [command.arguments objectAtIndex:0];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
+@implementation MainViewController
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {

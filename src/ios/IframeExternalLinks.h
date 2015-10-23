@@ -19,11 +19,8 @@
  under the License.
  */
 
-#import <Cordova/CDVPlugin.h>
+#import <Cordova/CDV.h>
 
 @interface IframeExternalLinks : CDVPlugin
-
-// Init the plugin
-- (void) initPlugin:(CDVInvokedUrlCommand*)command;
 
 @end
