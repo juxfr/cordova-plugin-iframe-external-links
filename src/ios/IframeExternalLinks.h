@@ -19,7 +19,7 @@
  under the License.
  */
 
-#import <Cordova/CDV.h>
+#import <Cordova/CDVPlugin.h>
 
 @interface IframeExternalLinks : CDVPlugin
 
