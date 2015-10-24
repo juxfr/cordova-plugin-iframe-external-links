@@ -20,6 +20,7 @@
  */
 
 #import <Cordova/CDVPlugin.h>
+#import <Cordova/CDVWebViewDelegate.h>
 
 @interface IframeExternalLinks : CDVPlugin
 

@@ -41,7 +41,7 @@
             return NO;
     } else{
         //NSLog(@"URL2: %@", url);
-        return [ super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType ];
+        //return [ super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType ];
     }
 }
 
