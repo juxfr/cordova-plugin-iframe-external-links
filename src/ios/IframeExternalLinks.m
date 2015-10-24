@@ -20,9 +20,9 @@
  */
 
 #import "IframeExternalLinks.h"
-#import <Cordova/CDVWebViewDelegate.h>
+#import <Cordova/CDVViewController.h>
 
-@implementation CDVWebViewDelegate (IframeExternalLinks)
+@implementation IframeExternalLinks
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
